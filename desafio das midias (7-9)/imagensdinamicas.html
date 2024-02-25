@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../desafio das midias (7-9)/imagens/chapeu-de-graduacao.ico" type="image/x-icon">
+    <title>Imagens dinâmicas em HTML5</title>
+</head>
+<body>
+    <!--HOMEPAGE BUTTOM-->
+    <div>
+            <a href="ferramentasdemidia.html" target="_self" rel="prev">
+                <abbr title="voltar para homepage">
+                        <img src="imagens/icons8-casa-64.png" alt="homepagebuttom" width="50px" height="50px">
+                </abbr>
+            </a>
+    </div>
+    <div>
+        <h1>
+            Imagens dinâmicas
+        </h1>
+        <p>
+            Tente abrir esse site em dispositivos com telas de tamanhos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+        </p>
+        <picture>
+            <!--
+                manter essa ordem de prioridade (maior=>menor
+            -->
+            <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+            <source media="(max-width: 1050px )" srcset="imagens/fotom.png" type="image/png">
+            <img src="imagens/fotog.png" alt="imagem flexível">
+        </picture>
+    </div>
